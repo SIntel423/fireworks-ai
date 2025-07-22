@@ -19353,10 +19353,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swiper@npm:^11.2.8":
-  version: 11.2.8
-  resolution: "swiper@npm:11.2.8"
-  checksum: 10c0/1f20611434ae9659a62da3efc220043c52135e9377c95c359f2baa4852deaeb52c9580e14e4d1b6c3f1a27ff118bbd3b9e13f14c8ca99e0ee7f63b17ec94f6dc
+"swiper@npm:^11.2.10":
+  version: 11.2.10
+  resolution: "swiper@npm:11.2.10"
+  checksum: 10c0/b7e3a7c79d92ccc62af77744edc376c9aefc771a0abd50c4adf07b5e3450b5da9ca7f84f5809e275ff65e1bc9d4500d930628e84a76fc7f2db403291c69b7fac
   languageName: node
   linkType: hard
 
@@ -20713,7 +20713,7 @@ __metadata:
     react-hook-form: "npm:^7.54.2"
     react-intersection-observer: "npm:^9.16.0"
     sharp: "npm:^0.33.5"
-    swiper: "npm:^11.2.8"
+    swiper: "npm:^11.2.10"
     tailwind-merge: "npm:^3.0.2"
     tailwindcss: "npm:^4.0.9"
     typescript: "npm:^5.8.2"
