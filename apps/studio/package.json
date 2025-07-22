@@ -30,7 +30,7 @@
     "@sanity/embeddings-index-ui": "^2.0.1",
     "@sanity/icons": "^3.7.0",
     "@sanity/image-url": "^1.1.0",
-    "@sanity/table": "^1.1.3",
+    "@sanity/table": "^1.1.4",
     "@sanity/ui": "^2.14.4",
     "@sanity/vision": "^3.77.2",
     "crypto-js": "^4.2.0",
