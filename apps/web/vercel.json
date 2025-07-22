@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/docs",
+      "destination": "https://fireworksai-docs.mintlify.dev/docs"
+    },
+    {
+      "source": "/docs/:match*",
+      "destination": "https://fireworksai-docs.mintlify.dev/docs/:match*"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@packages/utils",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "arrays.ts",
+    "strings.ts",
+    "typeUtils.ts"
+  ],
+  "devDependencies": {
+    "@packages/eslint": "*",
+    "@packages/typescript": "*",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,113 @@
+/* General */
+@utility absolute-cover {
+  @apply absolute inset-0 size-full;
+}
+
+@utility animate-pause {
+  animation-play-state: paused;
+}
+
+@utility scrollbar-hidden {
+  &::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
+
+/* Focus Outlines */
+@theme inline {
+  --focus-outline-primary: var(--color-purple-400);
+  --focus-outline-marine: var(--color-marine-400);
+  --focus-outline-error: var(--color-error-500);
+}
+
+@utility focus-outline-* {
+  &:focus-visible,
+  &:focus-within {
+    outline: 3px solid;
+    outline-color: --value(--focus-outline- *);
+  }
+}
+
+@utility stateful-outline-* {
+  outline: 3px solid;
+  outline-color: --value(--focus-outline- *);
+}
+
+/* Bleed */
+@utility bleed-* {
+  padding: calc(var(--spacing) * --value(integer));
+  margin: calc(var(--spacing) * --value(integer) * -1);
+}
+
+@utility bleed-x-* {
+  padding-inline: calc(var(--spacing) * --value(integer));
+  margin-inline: calc(var(--spacing) * --value(integer) * -1);
+}
+
+@utility bleed-y-* {
+  padding-block: calc(var(--spacing) * --value(integer));
+  margin-block: calc(var(--spacing) * --value(integer) * -1);
+}
+
+@utility bleed-t-* {
+  padding-top: calc(var(--spacing) * --value(integer));
+  margin-top: calc(var(--spacing) * --value(integer) * -1);
+}
+
+@utility bleed-r-* {
+  padding-right: calc(var(--spacing) * --value(integer));
+  margin-right: calc(var(--spacing) * --value(integer) * -1);
+}
+
+@utility bleed-b-* {
+  padding-bottom: calc(var(--spacing) * --value(integer));
+  margin-bottom: calc(var(--spacing) * --value(integer) * -1);
+}
+
+@utility bleed-l-* {
+  padding-left: calc(var(--spacing) * --value(integer));
+  margin-left: calc(var(--spacing) * --value(integer) * -1);
+}
+
+/* Border Gradient */
+@utility border-gradient-* {
+  @apply relative after:absolute after:-inset-0.5 after:mask-image-content after:bg-[size:100%] after:mask-composite-exclude after:p-0.5;
+  &:after {
+    background-image: --value(--gradient- *);
+  }
+}
+
+/* Masks */
+@utility mask-image-* {
+  mask-image: --value(--mask- *);
+}
+
+/* Icon Color */
+@utility icon-* {
+  fill: --value(--color- *);
+  stroke: --value(--color- *);
+}
+
+@utility clip-loader {
+  clip-path: inset(0 100% 0 0);
+}
+
+@utility bg-dot-loader-* {
+  background: radial-gradient(circle closest-side, --value(--color- *) 95%, #0000) 0 / calc(100% / 4) 100% space;
+}
+
+/* Word Spacing */
+@theme inline {
+  --word-spacing-none: 0px;
+  --word-spacing-xs: 1px;
+  --word-spacing-sm: 2px;
+  --word-spacing-md: 4px;
+  --word-spacing-lg: 8px;
+  --word-spacing-xl: 16px;
+  --word-spacing-2xl: 32px;
+  --word-spacing-full: 100vw;
+}
+
+@utility word-spacing-* {
+  word-spacing: --value(--word-spacing- *);
+}

@@ -1,0 +1,3 @@
+@utility form-inputs {
+  @apply w-full rounded-lg border-stroke-1 px-[11px] py-[7px] text-md text-copy focus-outline-primary placeholder:text-copy disabled:cursor-not-allowed data-[error=true]:border-red-500 dark:focus-outline-marine has-value:bg-white;
+}

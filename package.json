@@ -1,0 +1,82 @@
+{
+  "name": "sanity-template",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Webstacks",
+    "url": "https://www.webstacks.com/"
+  },
+  "scripts": {
+    "build": "dotenv -- turbo run build",
+    "dev": "dotenv -- turbo run dev",
+    "dev:cms": "dotenv -- turbo run dev --filter=studio",
+    "dev:web": "dotenv -- turbo run dev --filter=web",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "check-types": "turbo run type-check"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "^9.21.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.2",
+    "turbo": "^2.4.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "turbo run lint"
+    ]
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/git",
+      "@semantic-release/changelog"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "yarn@4.5.0"
+}

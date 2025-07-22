@@ -1,0 +1,31 @@
+@theme {
+  /* px  */
+  --container-3xs: 256px;
+  --container-2xs: 288px;
+  --container-xs: 320px;
+  --container-sm: 384px;
+  --container-md: 448px;
+  --container-lg: 512px;
+  --container-xl: 576px;
+  --container-2xl: 672px;
+  --container-3xl: 768px;
+  --container-4xl: 896px;
+  --container-5xl: 1024px;
+  --container-6xl: 1152px;
+  --container-7xl: 1280px;
+
+  /* rem */
+  --container-3xs-rem: 16rem;
+  --container-2xs-rem: 18rem;
+  --container-xs-rem: 20rem;
+  --container-sm-rem: 24rem;
+  --container-md-rem: 28rem;
+  --container-lg-rem: 32rem;
+  --container-xl-rem: 36rem;
+  --container-2xl-rem: 42rem;
+  --container-3xl-rem: 48rem;
+  --container-4xl-rem: 56rem;
+  --container-5xl-rem: 64rem;
+  --container-6xl-rem: 72rem;
+  --container-7xl-rem: 80rem;
+}

@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@config '../../tailwind.config.ts';
+
+@import './animation.css';
+@import './blur.css';
+@import './breakpoints.css';
+@import './color.css';
+@import './container.css';
+@import './formInputs.css';
+@import './gradient.css';
+@import './mask.css';
+@import './shadow.css';
+@import './spacing.css';
+@import './tokens.css';
+@import './typography.css';
+@import './utilities.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant has-value (&:not(:placeholder-shown));
+@custom-variant child-has-value (& input:not(:placeholder-shown));
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  html {
+    @apply scroll-smooth font-aspekta;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply scroll-m-24;
+  }
+
+  p {
+    @apply whitespace-pre-wrap;
+  }
+  
+  /* Override SVG colors to allow text color classes to work */
+  svg {
+    color: inherit;
+  }
+  
+  /* Make SVG use the current text color for stroke and fill */
+  svg use {
+    stroke: currentColor;
+    fill: currentColor;
+  }
+}

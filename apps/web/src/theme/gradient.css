@@ -1,0 +1,20 @@
+@theme {
+  --gradient-primary: linear-gradient(90deg, var(--color-black), var(--color-white));
+  --gradient-banner: linear-gradient(
+    90deg,
+    var(--color-purple-400) -8.76%,
+    #dadbdf 25.28%,
+    #64a8f2 88.61%,
+    var(--color-red-500) 120.49%
+  );
+  --gradient-dark-banner: linear-gradient(91deg, #8c5cf5 -19.42%, #5c42b0 46.15%, #330e53 99.17%);
+  --gradient-model-blue: linear-gradient(101deg, #bbdeff -9.76%, #e1e8ff 32.88%, #eef1ff 99.56%);
+  --gradient-model-yellow: linear-gradient(101deg, #ebdaad -9.76%, #fff5d9 32.88%, #ffebd3 99.56%);
+  --gradient-model-green: linear-gradient(
+    101deg,
+    #65e4cc -9.76%,
+    #b9fff2 44.9%,
+    var(--color-marine-25, #d3fff7) 99.56%
+  );
+  --gradient-model-red: linear-gradient(101deg, #fbb9b4 -9.76%, #ffe8e7 44.9%, #fdcdc9 99.56%);
+}

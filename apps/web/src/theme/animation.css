@@ -1,0 +1,241 @@
+@theme {
+  @keyframes hide {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes testimonialAccordionSlideDown {
+    from {
+      height: 36px;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes testimonialAccordionSlideUp {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 36px;
+    }
+  }
+
+  @keyframes accordionSlideDown {
+    from {
+      height: 0px;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordionSlideUp {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0px;
+    }
+  }
+
+  @keyframes modalShow {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: rotateX(-30deg) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+  }
+
+  @keyframes scaleOut {
+    from {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: rotateX(-10deg) scale(0.95);
+    }
+  }
+
+  @keyframes scrollingY {
+    from {
+      transform: translateY(-10%);
+    }
+    to {
+      transform: translateY(-60%);
+    }
+  }
+
+  @keyframes scrollingX {
+    from {
+      transform: translateX(-10%);
+    }
+    to {
+      transform: translateX(-60%);
+    }
+  }
+
+  @keyframes slideInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scaleY(1.1) translateZ(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scaleY(1) translateZ(0);
+    }
+  }
+
+  @keyframes slideOutBottom {
+    from {
+      transform: translateY(0);
+      opacity: '1';
+    }
+    to {
+      transform: translateY(100%);
+      opacity: '0';
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(24px) scaleX(1.05) translateZ(0);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) scaleX(1) translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+      opacity: '0';
+    }
+    to {
+      transform: translateX(100%);
+      opacity: '1';
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-24px) scaleX(1.05) translateZ(0);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) scaleX(1) translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: '0';
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: '1';
+    }
+  }
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-16px) scaleY(1.1) translateZ(0);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0) scaleY(1) translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideOutTop {
+    from {
+      transform: translateY(0);
+      opacity: '0';
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: '1';
+    }
+  }
+
+  @keyframes dotLoader {
+    to {
+      clip-path: inset(0 -25% 0 0);
+    }
+  }
+}
+
+@theme {
+  --animate-modal-show: modalShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-accordion-slide-down: accordionSlideDown 300ms cubic-bezier(0.87, 0, 0.13, 1) 0s forwards;
+  --animate-accordion-slide-up: accordionSlideUp 300ms cubic-bezier(0.87, 0, 0.13, 1) 0s forwards;
+  --animate-testimonial-accordion-slide-down: testimonialAccordionSlideDown 300ms cubic-bezier(0.87, 0, 0.13, 1) 0s
+    forwards;
+  --animate-testimonial-accordion-slide-up: testimonialAccordionSlideUp 300ms cubic-bezier(0.87, 0, 0.13, 1) 0s forwards;
+  --animate-scale-in: scaleIn 200ms ease;
+  --animate-scale-out: scaleOut 200ms ease;
+  --animate-slide-in-bottom: slideInBottom 500ms cubic-bezier(0.33, 1, 0.68, 1) var(--delay, 0ms) forwards;
+  --animate-slide-out-bottom: slideOutBottom 250ms ease-in-out;
+  --animate-slide-in-right: slideInRight 500ms cubic-bezier(0.33, 1, 0.68, 1) var(--delay, 0ms) forwards;
+  --animate-slide-out-right: slideOutRight 250ms ease-in-out;
+  --animate-slide-in-top: slideInTop 500ms cubic-bezier(0.33, 1, 0.68, 1) var(--delay, 0ms) forwards;
+  --animate-slide-out-top: slideOutTop 250ms ease-in-out;
+  --animate-slide-in-left: slideInLeft 500ms cubic-bezier(0.33, 1, 0.68, 1) var(--delay, 0ms) forwards;
+  --animate-slide-out-left: slideOutLeft 250ms ease-in-out;
+  --animate-marquee-y: scrollingY 75s linear infinite;
+  --animate-marquee-y-reverse: scrollingY 75s linear infinite reverse;
+  --animate-marquee-x: scrollingX 75s linear infinite;
+  --animate-marquee-x-reverse: scrollingX 75s linear infinite reverse;
+  --animate-dot-loader: dotLoader 1.4s steps(5) infinite;
+  --animate-fade-in: fadeIn 400ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+@utility animation-delay-* {
+  /* prettier-ignore */
+  animation-delay: --value(integer)ms !important;
+}

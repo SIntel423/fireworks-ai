@@ -1,0 +1,11 @@
+@theme {
+  --blur-none: unset;
+  --blur-sm: 4px;
+  --blur-md: 8px;
+  --blur-lg: 12px;
+  --blur-xl: 20px;
+}
+
+@utility backdrop-blur-* {
+  backdrop-filter: blur(--value(--blur- *));
+}

@@ -1,0 +1,5 @@
+/* Horizontal mask for testimonial carousel fade effect */
+.mask-horizontal {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.7) 10%, black 20%, black 80%, rgba(0, 0, 0, 0.7) 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.7) 10%, black 20%, black 80%, rgba(0, 0, 0, 0.7) 90%, transparent 100%);
+}

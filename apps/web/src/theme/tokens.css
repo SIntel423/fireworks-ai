@@ -1,0 +1,23 @@
+@utility text-copy {
+  @apply text-gray dark:text-neutrals-50;
+}
+
+@utility text-headline {
+  @apply text-neutrals-900 dark:text-white;
+}
+
+@utility text-subtitle-light {
+  color: var(--text-subtitle-override, var(--color-gray));
+}
+
+@utility text-subtitle {
+  @apply text-subtitle-light dark:text-neutrals-50;
+}
+
+@utility border-stroke-1 {
+  @apply border border-neutrals-300 dark:border-neutrals-600;
+}
+
+@utility bg-image-card {
+  background: linear-gradient(180deg, rgba(242, 242, 242, 0.00) 50%, #F2F2F2 100%), url(/backgrounds/bg-grid.png) 0% 0% / 25px 25px repeat, var(--color-neutrals-50);
+}

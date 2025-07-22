@@ -1,0 +1,48 @@
+@theme {
+  --shadowXs: ;
+  --shadowSm: ;
+  --shadowMd: 0px 12px 16px -4px rgba(26, 49, 255, 0.08), 0px 4px 6px -2px rgba(26, 49, 255, 0.03);
+  --shadowLg:
+    0px 49.175px 13.769px 0px rgba(0, 0, 0, 0), 0px 31.472px 12.458px 0px rgba(0, 0, 0, 0.01),
+    0px 17.703px 10.491px 0px rgba(0, 0, 0, 0.05), 0px 7.868px 7.868px 0px rgba(0, 0, 0, 0.09),
+    0px 1.967px 4.59px 0px rgba(0, 0, 0, 0.1);
+  --shadowXl:
+    0px 75px 21px 0px rgba(0, 0, 0, 0), 0px 48px 19px 0px rgba(0, 0, 0, 0.01), 0px 27px 16px 0px rgba(0, 0, 0, 0.05),
+    0px 12px 12px 0px rgba(0, 0, 0, 0.09), 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+  --shadow2xl: ;
+  --shadow3xl: ;
+
+  --drop-shadowNone: unset;
+  --drop-shadowSm: ;
+  --drop-shadowMd: drop-shadow(0px 12px 16px -4px rgba(26, 49, 255, 0.08))
+    drop-shadow(0px 4px 6px -2px rgba(26, 49, 255, 0.03));
+  --drop-shadowLg: drop-shadow(0px 49.175px 13.769px rgba(0, 0, 0, 0))
+    drop-shadow(0px 31.472px 12.458px rgba(0, 0, 0, 0.01)) drop-shadow(0px 17.703px 10.491px rgba(0, 0, 0, 0.05))
+    drop-shadow(0px 7.868px 7.868px rgba(0, 0, 0, 0.09)) drop-shadow(0px 1.967px 4.59px rgba(0, 0, 0, 0.1));
+  --drop-shadowXl: drop-shadow(0px 75px 21px rgba(0, 0, 0, 0)) drop-shadow(0px 48px 19px rgba(0, 0, 0, 0.01))
+    drop-shadow(0px 27px 16px rgba(0, 0, 0, 0.05)) drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.09))
+    drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.1));
+  --drop-shadow2xl: ;
+  --drop-shadow3xl: ;
+
+  --shadow-none: unset;
+  --shadow-sm: var(--shadowXs);
+  --shadow-md: var(--shadowMd);
+  --shadow-lg: var(--shadowLg);
+  --shadow-xl: var(--shadowXl);
+  --shadow-2xl: var(--shadow2xl);
+  --shadow-3xl: var(--shadow3xl);
+
+  --drop-shadow-none: unset;
+  --drop-shadow-sm: var(--drop-shadowSm);
+  --drop-shadow-md: var(--drop-shadowMd);
+  --drop-shadow-lg: var(--drop-shadowLg);
+  --drop-shadow-xl: var(--drop-shadowXl);
+  --drop-shadow-2xl: var(--drop-shadow2xl);
+  --drop-shadow-3xl: var(--drop-shadow3xl);
+}
+
+@utility drop-shadow-* {
+  --tw-drop-shadow: --value(--drop-shadow- *);
+  filter: var(--tw-drop-shadow);
+}

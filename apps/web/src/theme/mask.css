@@ -1,0 +1,14 @@
+@theme {
+  --mask-content: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+  --mask-marquee: linear-gradient(90deg, transparent 1%, white 10%, white 90%, transparent 99%);
+
+  /* Mask Composite */
+  --composite-add: add;
+  --composite-subtract: subtract;
+  --composite-exclude: exclude;
+  --composite-intersect: intersect;
+}
+
+@utility mask-composite-* {
+  mask-composite: --value(--composite- *);
+}

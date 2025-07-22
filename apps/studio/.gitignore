@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.yarn/install-state.gz
+.yarn
+.pnp
+.pnp.js
+
+# local envs
+.turbo
+.env*
+
+# testing
+coverage
+
+# sanity
+.sanity
+dist
+
+# misc
+.eslintcache
+.vscode
+.DS_Store
+.react-templates
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
