@@ -8,7 +8,7 @@
     "./web": "./eslint.web.config.mjs"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.7",
+    "@eslint/compat": "^1.3.2",
     "@next/eslint-plugin-next": "^15.2.0",
     "@packages/typescript": "*",
     "@types/eslint": "^9.6.1",
